@@ -13,7 +13,7 @@ PMPERMIT_PIC = os.environ.get("PMPERMIT_PIC", None)
 THUNDRPIC = (
     PMPERMIT_PIC
     if PMPERMIT_PIC
-    else "https://telegra.ph/file/d8debedf797a5c00a7844.png"
+    else "https://webneel.com/wallpaper/sites/default/files/images/04-2013/dog-in-dream-wallpaper.1440.jpg"
 )
 PM_WARNS = {}
 PREV_REPLY_MESSAGE = {}
@@ -21,12 +21,12 @@ myid = bot.uid
 MESAG = (
     str(CUSTOM_PMPERMIT)
     if CUSTOM_PMPERMIT
-    else "`ThunderUserbot PM security! Please wait for me to approve you. 😊"
+    else "`Ankit PM security! Please wait for me to approve you. 😊"
 )
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "ThunderUserbot User"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Ankit :/"
 USER_BOT_WARN_ZERO = "`I had warned you not to spam. Now you have been blocked and reported until further notice.`\n\n**GoodBye!** "
 USER_BOT_NO_WARN = (
-    "**PM Security ~ ThunderUserbot**\n\nNice to see you here, but  "
+    "**PM Security ~ Ankit**\n\nNice to see you here, but  "
     "[{}](tg://user?id={}) is currently unavailable.\nThis is an automated message.\n\n"
     "{}\n\n**You have** `{}/{}` **warnings...**"
     "\n\n   ~ Thank You."
@@ -254,8 +254,8 @@ async def hehehe(event):
     chat = await event.get_chat()
     if event.is_private:
         if not pmpermit_sql.is_approved(chat.id):
-            pmpermit_sql.approve(chat.id, "**My owner or Thungergang member is here**")
-            await borg.send_message(chat, "**My owner or Thungergang member is here!!**")
+            pmpermit_sql.approve(chat.id, "**My owner is here**")
+            await borg.send_message(chat, "**My owner is here!!**")
 
 
 # instant block
