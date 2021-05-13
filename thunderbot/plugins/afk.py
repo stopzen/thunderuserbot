@@ -77,11 +77,11 @@ async def on_afk(event):
     if USER_AFK and not (await event.get_sender()).bot:
         msg = None
         if reason is not None and thundrgang == "True":
-            message_to_reply = "**AFK**\n{}\n\n**Last active** `{}` **ago.**\n\n**Reason** : {}".format(
+            message_to_reply = "**AFK**\n{}\n\n**Last active** `{}` **ago.**\n\n**Reason😌** : {}".format(
                 CUSTOM_AFK, endtime, reason
             )
         elif thundrgang == "False":
-            message_to_reply = "**AFK**\n{}\n\n**Last active** `{}` **ago.**\n\n**Reason** - {}".format(
+            message_to_reply = "**AFK**\n{}\n\n**Last active** `{}` **ago.**\n\n**Reason😌** - {}".format(
                 CUSTOM_AFK, endtime, reason
             )
         else:
@@ -165,7 +165,7 @@ async def _(event):
         USER_AFK = f"on: {reason}"
         if reason:
             await event.edit(
-                f"`Your status has been set to AFK.`\n**Reason** - {reason}"
+                f"`Your status has been set to AFK.`\n**Reason😌** - {reason}"
             )
             await asyncio.sleep(5)
             await event.delete()
@@ -177,12 +177,12 @@ async def _(event):
             if reason:
                 await event.client.send_message(
                     Var.PRIVATE_GROUP_ID,
-                    f"#AFK \nAFK - Active\nReason - {reason}",
+                    f"#AFK \nAFK - Active\nReason😌 - {reason}",
                 )
             else:
                 await event.client.send_message(
                     Var.PRIVATE_GROUP_ID,
-                    f"#AFK \nAFK - Active\nReason - None Specified.",
+                    f"#AFK \nAFK - Active\nReason😌 - None Specified.",
                 )
 
 
